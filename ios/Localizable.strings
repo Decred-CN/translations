@@ -196,7 +196,7 @@
 "confirmations" = "%d个确认";
 "transactionID" = "交易ID";
 "transferred" = "已转入";
-"includedInBlock" = "包含在区块中";
+"includedInBlock" = "包含区块";
 "howToCopy" = "如何复制";
 "tapOnBlueText" = "轻按<blue>蓝色文本</blue>复制条目";
 "gotIt" = "好的";
