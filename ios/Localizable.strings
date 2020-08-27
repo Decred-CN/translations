@@ -94,7 +94,7 @@
 "addressDiscoveryProgressThrough" = "~%d%%";
 "scanningTotalHeaders" = "%d/%d";
 "synchronizing" = "正在同步...";
-"syncTotalProgress" = "%d%%已完成, %@剩余.";
+"syncTotalProgress" = "%d%%已完成, %@ 剩余.";
 "total"  = "总共:";
 "latestBlockAge" = "最新区块 %d% :- %@";
 "blockHeadersFetched" = "区块头已获取";
@@ -121,7 +121,7 @@
 "waitForSync" = "等待同步完成";
 "scannedBlocks" = "已扫描完区块";
 "rescanningBlocks" = "正在重新扫描区块...";
-"blocksLeft" = "%d剩余";
+"blocksLeft" = "%d 剩余";
 "errorSyncInProgress" = "当同步正在进行时不能开启重新扫描";
 "errorRescanInProgress" = "当一个重新扫描正在运行时不能重新扫描";
 "rescanProgressNotification" = "检查首页进度！";
