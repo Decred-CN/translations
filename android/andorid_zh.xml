@@ -96,7 +96,7 @@
     <!--Seed-->
     <string name="save_seed_instruction">请按照正确的顺序写下33个助记词。</string>
     <string name="backup_seed_phrase">备份助记词短语</string>
-    <string name="verify_seed_info">验证你的助记词短语以便在需要的时候能够恢复。</string>
+    <string name="verify_seed_info">验证你的助记词短语以便在需要的时候能够恢复钱包。</string>
 
     <!--/Seed-->
 
