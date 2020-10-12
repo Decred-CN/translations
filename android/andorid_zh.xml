@@ -247,7 +247,7 @@
     <!--Security-->
     <string name="pin">PIN码</string>
     <string name="create_spending_pin">创建支付PIN码</string>
-    <string name="create_spending_pass">船舰支付密码</string>
+    <string name="create_spending_pass">创建支付密码</string>
     <string name="change_spending_pass">更改支付密码</string>
     <string name="change_spending_pin">更改支付PIN码</string>
     <string name="mismatch_passcode">PIN码不匹配</string>
@@ -525,7 +525,7 @@
     <string name="wait_for_sync">等待同步完成</string>
     <string name="welcome_title">欢迎使用Decred钱包</string>
     <string name="first_run_notice">你的33个助记词短语是你的钱包，请保持它安全。在你的设备丢失或破坏的情况下没有它你的资金将不能恢复\n\n首次钱包同步将比平常耗费更多时间。</string>
-    <string name="welcome_screen_text">欢迎使用Decred钱包，一个安全 &amp; 开源的移动钱包</string>
+    <string name="welcome_screen_text">欢迎使用Decred钱包\n一个安全开源的移动钱包</string>
     <string name="mywallet">我的钱包</string>
     <string name="today">今天</string>
     <string name="yesterday">昨天</string>
