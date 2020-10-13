@@ -7,10 +7,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!--General-->
     <string name="wallet">钱包</string>
-    <string name="crash_dialog_text">一项意外错误导致应用被强制终止，请点击“确定”向我们发送您的设备规范和应用日志以帮助我们解决此问题，这将有助于我们防止错误的再次发生。</string>
-    <string name="send_dcr_info">输入或扫描目标地址并输入要发送的DCR数量。</string>
+    <string name="crash_dialog_text">一项意外错误导致应用被强制终止，
+    请点击“确定”向我们发送您的设备规范和应用日志以帮助我们解决此问题，
+    这将有助于我们防止错误的再次发生。</string>
+    <string name="send_dcr_info">输入或扫描目标地址并输入要发送的DCR数量</string>
     <string name="type">类别</string>
-    <string name="loading">加载中</string>
+    <string name="loading">加载中…</string>
     <string name="dcr" translatable="false">DCR</string>
     <string name="help">帮助</string>
     <string name="about">关于</string>
@@ -77,13 +79,12 @@
     <string name="remove_watch_wallet_prompt">从设备中移除观察钱包？</string>
     <string name="remove_wallet_message">确保你在移除钱包前已备份了助记词</string>
     <string name="error_copied">错误已复制</string>
+    <string name="version">版本</string>
+    <string name="build_date">编译日期</string>
+    <string name="net">网络类型</string>
+    <string name="connecting_to_peers">连接节点数</string>
 
     <!--/General-->
-
-    <!--Peers-->
-    <string name="version">版本</string>
-    <string name="connecting_to_peers">正在连接到节点</string>
-    <!--/Peers-->
 
     <!--Account-->
     <string name="account_number">账户编号</string>
@@ -94,9 +95,9 @@
     <!--/Account-->
 
     <!--Seed-->
-    <string name="save_seed_instruction">请按照正确的顺序写下33个助记词。</string>
+    <string name="save_seed_instruction">请按照正确的顺序写下33个助记词</string>
     <string name="backup_seed_phrase">备份助记词短语</string>
-    <string name="verify_seed_info">验证你的助记词短语以便在需要的时候能够恢复钱包。</string>
+    <string name="verify_seed_info">验证你的助记词短语以便在需要的时候能够恢复钱包</string>
 
     <!--/Seed-->
 
@@ -117,7 +118,7 @@
     <string name="import_watching_only_wallet">导入观察钱包</string>
     <string name="opening_wallet">正在打开钱包…</string>
     <string name="opening_wallets">正在打开钱包…</string>
-    <string name="invalid_passphrase">密码输入不正确。</string>
+    <string name="invalid_passphrase">密码输入不正确！</string>
     <string name="invalid_pin">PIN码输入不正确</string>
     <string name="invalid_password">密码输入不正确</string>
     <string name="failed_to_open_wallet">打开钱包失败</string>
@@ -138,6 +139,7 @@
     <string name="new_transaction">新的交易</string>
     <string name="wallet_new_transaction">[%1$s]新的交易</string>
     <string name="tx_details_confirmations"><![CDATA[<font color="#41be53">已确认</font> &centerdot; %1$d 确认数]]></string>
+    <string name="tx_details_pending_confirmation"><![CDATA[<font color="#8997A5">等待中</font> &centerdot; %1$d 确认数]]></string>
 
     <string-array name="timestamp_sort">
         <item>最新的</item>
@@ -153,7 +155,7 @@
     <string name="remaining_seconds_sync_eta">%1$d%% 已完成, %2$d 秒钟剩余.</string>
     <string name="remaining_sync_eta_less_than_seconds">%1$d%% 已完成, &lt;1 秒钟剩余.</string>
     <string name="synchronizing">正在同步…</string>
-    <string name="scanned_blocks">已扫描完区块</string>
+    <string name="scanned_blocks">已扫描区块</string>
     <!--/Sync Messages-->
 
     <!--QR Code-->
@@ -225,8 +227,8 @@
     <string name="sign">签名</string>
     <string name="message">消息</string>
     <string name="signature">签名</string>
-    <string name="valid_signature">根据消息和地址验证这个签名正确。</string>
-    <string name="invalid_signature">根据消息和地址验证这个签名不正确。</string>
+    <string name="valid_signature">根据消息和地址验证这个签名正确</string>
+    <string name="invalid_signature">根据消息和地址验证这个签名不正确</string>
     <string name="sign_message_description">使用地址签名一个消息，私钥能够帮助你证明你给对方的地址的所有权。</string>
     <string name="verify_message_description"><![CDATA[在你或对方声称一个签名后， 你可以使用此框来验证消息的正确性。<br/><br/>一旦你输入了地址、这个消息和对应的签名，你会看到 <font color="#41be53">正确的</font> 如果这个签名和消息、地址相对应，否则显示<font color="#ed6d47">不正确</font>.]]></string>
     <!--/Security Fragment-->
@@ -283,7 +285,7 @@
 
     <!--WIFI Sync-->
     <string name="wifi_data_sync_title">当未连接WiFi时同步</string>
-    <string name="wifi_sync_notice">你想要在所有网络环境下同步吗？</string>
+    <string name="wifi_sync_notice">想要在所有网络环境下同步吗？</string>
     <string name="not_connected_to_wifi">不能连接到WIFI</string>
     <string name="sync">同步</string>
     <string name="not_now">现在不</string>
@@ -318,6 +320,7 @@
     <string name="online">在线</string>
     <string name="no_transactions_yet">没有交易</string>
     <string name="not_syncing">未同步</string>
+    <string name="rebroadcast">重新广播</string>
     <string name="reconnect">重连</string>
     <string name="disconnect">断开连接</string>
     <string name="connect">连接</string>
@@ -341,7 +344,7 @@
 
     <string name="synced_latest_block_time"><![CDATA[最新区块 <font color="#091440">%1$d</font> &centerdot; <font color="#091440">%2$s</font> 前]]></string>
     <string name="latest_block_time"><![CDATA[已同步到区块 <font color="#091440">%1$d</font> &centerdot; <font color="#091440">%2$s</font> 前]]></string>
-    <string name="connected_peers"><![CDATA[已连接到 <font color="#091440">%1$d</font> peers.]]></string>
+    <string name="connected_peers"><![CDATA[已连接到 <font color="#091440">%1$d</font> 节点.]]></string>
     <string name="no_connected_peers">未连接到节点</string>
     <string name="peers_connected">节点已连接</string>
     <string name="_default">默认</string>
@@ -382,8 +385,10 @@
     <string name="tx_sort_transferred">已转入的 (%1$d)</string>
     <string name="tx_sort_staking">投票权益 (%1$d)</string>
     <string name="tx_sort_coinbase">Coinbase (%1$d)</string>
+    <string name="ticket_purchase">购票</string>
     <string name="immature">未成熟</string>
     <string name="live">成熟</string>
+    <string name="purchased">已购</string>
     <string name="receive_dcr">接收DCR</string>
     <string name="selected_account_name">%1$s (%2$s)</string>
     <string name="decred_qr_address_prefix">decred:%1$s</string>
@@ -415,7 +420,7 @@
     <string name="send_from_account"><![CDATA[发送来自<font color="#091440"><b>%1$s (%2$s)</b></font>]]></string>
     <string name="send_invalid">发送不正确</string>
     <string name="to_destination_address">到目标地址</string>
-    <string name="send_dcr_warning">你的DCR将被发送并且不能撤销。</string>
+    <string name="send_dcr_warning">你的DCR将被发送并且不能撤销</string>
     <string name="to_self">发给自己</string>
     <string name="processing_ellipsis">处理中…</string>
     <string name="success">成功</string>
@@ -495,7 +500,7 @@
     <string name="confirm_new_spending_password">确认支付密码</string>
     <string name="remove_startup_security">移除启动安全性</string>
     <string name="close_backup_warning">关闭备份告警</string>
-    <string name="close_backup_warning_dialog_message">记得尽可能的备份你的钱包。</string>
+    <string name="close_backup_warning_dialog_message">记得尽可能的备份你的钱包！</string>
     <string name="startup_pin_prompt_title">使用启动PIN码解锁</string>
     <string name="startup_password_prompt_title">使用启动密码解锁</string>
     <string name="startup_fingerprint_prompt_title">使用指纹解锁</string>
@@ -509,12 +514,12 @@
     <string name="your_33_word_seed_phrase">你的33个单词助记词短语</string>
     <string name="i_have_wrote_down_all_33_words">我已经写下33单词</string>
     <string name="security_tools">安全工具</string>
-    <string name="security_tools_message">此处显示提高加密货币安全不同方面的各种工具。</string>
+    <string name="security_tools_message">这里提供可以提高加密货币安全的工具</string>
     <string name="wallet_removed">钱包已移除</string>
     <string name="rescanning_blocks_ellipsis">正在重新扫描区块…</string>
     <string name="view_statistics">查看统计</string>
     <string name="rescan_blockchain">重新扫描区块链</string>
-    <string name="rescan_progress_notification">在首页检查进度！</string>
+    <string name="rescan_progress_notification">在首页检查进度</string>
     <string name="rescan_blockchain_warning">你确定吗？这将花点时间</string>
     <string name="err_sync_in_progress">当同步进行中不能开启扫描</string>
     <string name="err_rescan_in_progress">当另一个扫描正在进行时不能开启扫描</string>
@@ -536,7 +541,7 @@
     <string name="wallets_limit_error">限制每一个钱包使用1G RAM内存空间在此设备上</string>
     <string name="disconnect_add_wallet">在添加钱包前请断开或取消同步</string>
     <string name="disconnect_delete_wallet">在删除钱包前请断开或取消同步</string>
-    <string name="seed_backup_success_msg">确保保存你的助记词短语在安全的位置。</string>
+    <string name="seed_backup_success_msg">确保保存你的助记词短语在安全的位置</string>
     <string name="seed_backup_verified">你的助记词短语是正确的</string>
-
+    <string name="rebroadcast_tx_success">重新广播未确认的交易到Decred网络</string>
 </resources>
