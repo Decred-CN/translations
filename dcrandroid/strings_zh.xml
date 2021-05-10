@@ -51,7 +51,7 @@
     <string name="connected_to_n_peer">已连接到%1$d 个节点</string>
     <string name="ok">OK</string>
     <string name="_continue">继续</string>
-    <string name="user_agent">用户代理</string>
+    <string name="user_agent">用户代理标识</string>
     <string name="user_agent_dialog_title">代理标识</string>
     <string name="peer_ip_dialog_title">设置永久节点</string>
     <string name="peer_ip_pref_hint">IP地址</string>
@@ -79,19 +79,18 @@
     <string name="remove_watch_wallet_prompt">从设备中移除观察钱包？</string>
     <string name="remove_wallet_message">确保你在移除钱包前已备份了助记词</string>
     <string name="error_copied">错误已复制</string>
-
     <!--/General-->
 
     <!--Peers-->
-    <string name="已连接的节点详情">
-        ID: %1$d
-        \nAddr: %2$s
-        \nAddr Local: %3$s
-        \nServices: %4$s
-        \nVersion: %5$d
-        \nSubVer: %6$s
-        \nStarting height: %7$d
-        \nBan score: %8$d
+    <string name="connected_peers_details">
+        节点ID: %1$d
+        \n节点地址: %2$s
+        \n本地地址: %3$s
+        \n服务类型: %4$s
+        \n版本: %5$d
+        \n子版本: %6$s
+        \n起始高度: %7$d
+        \nBan评分: %8$d
     </string>
     <string name="version">版本</string>
     <string name="build_date">编译时间</string>
@@ -126,13 +125,13 @@
     <!--/Balance-->
 
     <!--Wallet-->
-    <string name="create_a_new_wallet">创建一个新钱包</string>
+    <string name="create_a_new_wallet">创建新钱包</string>
     <string name="restore_existing_wallet">恢复已存在的钱包</string>
     <string name="import_existing_wallet">导入已存在的钱包</string>
     <string name="import_watching_only_wallet">导入观察钱包</string>
     <string name="opening_wallet">正在打开钱包…</string>
     <string name="opening_wallets">正在打开钱包…</string>
-    <string name="invalid_passphrase">密码输入不正确。</string>
+    <string name="invalid_passphrase">密码输入不正确</string>
     <string name="invalid_pin">PIN码输入不正确</string>
     <string name="invalid_password">密码输入不正确</string>
     <string name="failed_to_open_wallet">打开钱包失败</string>
@@ -170,9 +169,9 @@
     <!--/Block chain-->
 
     <!--Sync Messages-->
-    <string name="remaining_minute_sync_eta">%1$d%% 已完成, %2$d 分钟剩余.</string>
-    <string name="remaining_seconds_sync_eta">%1$d%% 已完成, %2$d 秒钟剩余.</string>
-    <string name="remaining_sync_eta_less_than_seconds">%1$d%% 已完成, &lt;1 秒钟剩余.</string>
+    <string name="remaining_minute_sync_eta">已完成%1$d%%，还剩%2$d分钟。</string>
+    <string name="remaining_seconds_sync_eta">已完成%1$d%%，还剩%2$d秒钟。</string>
+    <string name="remaining_sync_eta_less_than_seconds">已完成%1$d%%, 还剩不到1秒钟。</string>
     <string name="synchronizing">正在同步…</string>
     <string name="scanned_blocks">已扫描完区块</string>
     <!--/Sync Messages-->
@@ -317,8 +316,8 @@
     <!--Time-->
     <string name="am">上午</string>
     <string name="pm">下午</string>
-    <string name="time_left_minutes">%1$d分钟剩余</string>
-    <string name="time_left_seconds">%1$d秒钟剩余</string>
+    <string name="time_left_minutes">剩余%1$d分钟</string>
+    <string name="time_left_seconds">剩余%1$d秒钟</string>
     <string name="days_behind">%1$d天前</string>
     <string name="one_day_behind">1天前</string>
     <string name="x_days">%1$d天</string>
@@ -364,7 +363,7 @@
 
     <string name="synced_latest_block_time"><![CDATA[最新区块 <font color="#091440">%1$d</font> &centerdot; <font color="#091440">%2$s</font> 前]]></string>
     <string name="latest_block_time"><![CDATA[已同步到区块 <font color="#091440">%1$d</font> &centerdot; <font color="#091440">%2$s</font> 前]]></string>
-    <string name="connected_peers"><![CDATA[已连接到 <font color="#091440">%1$d</font> 个节点]]></string>
+    <string name="connected_to_n_peers"><![CDATA[已连接到 <font color="#091440">%1$d</font> 个节点]]></string>
     <string name="no_connected_peers">未连接到节点</string>
     <string name="connected_peers">已连接的节点</string>
     <string name="peers_connected">节点已连接</string>
@@ -506,7 +505,7 @@
     <string name="invalid_peer_ip">输入正确的IP地址</string>
     <string name="your_wallet_is_successfully_restored">你的钱包恢复成功</string>
     <string name="get_started">开始</string>
-    <string name="back">后退</string>
+    <string name="back">上一步</string>
     <string name="use_fingerprint">使用指纹</string>
     <string name="overview_backup_seed_instruction">强烈建议备份每一个钱包的助记词以便日后恢复钱包。</string>
     <string name="go_to_wallets">进入钱包</string>
@@ -547,7 +546,7 @@
     <string name="migrating_wallet">迁移钱包</string>
     <string name="add_new_wallet">添加新钱包</string>
     <string name="wait_for_sync">等待同步完成</string>
-    <string name="welcome_screen_text">欢迎使用Decred钱包，一个安全\n一个安全开源的移动钱包</string>
+    <string name="welcome_screen_text">欢迎使用Decred钱包\n一个安全开源的移动钱包</string>
     <string name="mywallet">我的钱包</string>
     <string name="today">今天</string>
     <string name="yesterday">昨天</string>
@@ -574,18 +573,18 @@
     <string name="mixer_has_stopped_running">cspp混币器已停止运行</string>
     <string name="no_mixable_output">未混合的账户没有可混合的输出</string>
     <string name="new_caps">新的</string>
-    <string name="privacy_is_here">隐私在此处</string>
-    <string name="privacy_intro_desc">你现在可以在App中使用StakeShuffle混币器去混合你的DCR</string>
-    <string name="dismiss">解除</string>
+    <string name="privacy_is_here">隐私功能在这</string>
+    <string name="privacy_intro_desc">你现在可以在App中使用StakeShuffle混币器去混合你的DCR硬币</string>
+    <string name="dismiss">取消</string>
     <string name="setup_mixer">设置混币器</string>
     <string name="privacy_popup_message">在隐私中设置StakeShuffle混币器</string>
     <string name="see_all">查看所有</string>
     <string name="privacy_intro_title">StakeShuffle混币器如何增强你的隐私？</string>
     <string name="privacy_intro_desc_1">StakeShuffle混币器可以通过CoinJoin交易方式混合你的DCR。</string>
-    <string name="privacy_intro_desc_2">使用已混合的DCR可以保护你免受财产活动公开（例如：你有多少钱,谁向你支付）。</string>
+    <string name="privacy_intro_desc_2">使用已混合的DCR可以保护你免受财产活动公开（例如：你有多少钱，谁向你打款）。</string>
     <string name="setup_mixer_btn_title">为此钱包设置混币器</string>
     <string name="privacy_intro_dialog_title">通过创建两个所需的帐户来设置混币器</string>
-    <string name="privacy_intro_dialog_desc"><![CDATA[使用混币器将会创建两个专用账户(“mixed” & “unmixed”)。<br/><br/><b><font color="#091440">此操作无法撤消</font></b>。]]></string>
+    <string name="privacy_intro_dialog_desc"><![CDATA[使用混币器将会创建两个专用账户(“mixed” & “unmixed”)。<br/><br/><b><font color="#091440">此操作无法撤消！</font></b>]]></string>
     <string name="begin_setup">开始设置</string>
     <string name="mixer_setup_completed">混币器设置完成</string>
     <string name="ready_to_mix">准备混合</string>
@@ -597,7 +596,7 @@
     <string name="mix_server">混币服务器</string>
     <string name="keep_app_opened">保持App打开</string>
     <string name="mixer_help_title">如何使用混币？</string>
-    <string name="mixer_help_desc"><![CDATA[当你打开混币器，你在这个钱包未混合的DCR（未混合的余额）将被逐步的混合。<br/><br/><b><font color="#091440">重要：当混币器处于开启状态请保持App处于前台。</font></b><br/><br/>混币器将会自动停止当未混合的余额被完全混合。]]></string>
+    <string name="mixer_help_desc"><![CDATA[当你打开混币器，这个钱包中未混合的DCR（未混合的余额）将被逐步地混合。<br/><br/><b><font color="#091440">重要：当混币器处于开启状态请保持App处于前台运行。</font></b><br/><br/>当未混合的余额被完全混合，混币器将会自动停止。]]></string>
     <string name="mixer_is_running">混币器正在运行中……</string>
     <string name="keep_this_app_opened">保持App处于开启状态</string>
     <string name="mixer_status_info">混币器将会自动停止当未混合的余额被完全混合。</string>
@@ -608,7 +607,7 @@
     <string name="go_back_rename">后退&amp; 重命名</string>
     <string name="set_up_needed_accounts">设置所需的账户</string>
     <string name="setup_mixer_account_desc">使用混币器将会创建两个专用账户：</string>
-    <string name="setup_mixer_account_bullet_1"><font color='#091440'><b>Mixed</b></font>账户将是支出账户。</string>
+    <string name="setup_mixer_account_bullet_1"><font color='#091440'><b>Mixed</b></font>账户将是支付账户。</string>
     <string name="setup_mixer_account_bullet_2"><font color='#091440'><b>Unmixed</b></font>账户将会是零钱处理账户。</string>
     <string name="auto_setup">自动设置</string>
     <string name="auto_setup_desc">为你创建并设置所需的账户。</string>
@@ -625,7 +624,7 @@
     <!--Politeia-->
     <string name="politeia">Politeia提案平台</string>
     <string name="proposal_details">提案详情</string>
-    <string name="ago">历史</string>
+    <string name="ago">之前</string>
     <string name="now">当前</string>
     <string name="status_abandoned">已废弃</string>
     <string name="status_invalid">不正确</string>
@@ -648,8 +647,8 @@
     <string name="politeia_server_url" translatable="false">http://proposals.decred.org/proposals/</string>
     <string name="share_proposal">分享提案链接</string>
     <string name="text_pain" translatable="false">text/plain</string>
-    <string name="comments">%d评论</string>
-    <string name="version_number">版本%s</string>
+    <string name="comments">%d 评论</string>
+    <string name="version_number">版本：%s</string>
     <string name="yes_votes_percent">批准：%1$d (%2$.2f%%)</string>
     <string name="no_votes_percent">拒绝：%1$d (%2$.2f%%)</string>
     <string name="yes_no_votes_percent">批准： %1$d (%2$.2f%%)  拒绝：%3$d (%4$.2f%%)</string>
