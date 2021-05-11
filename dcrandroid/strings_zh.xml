@@ -126,8 +126,8 @@
 
     <!--Wallet-->
     <string name="create_a_new_wallet">创建新钱包</string>
-    <string name="restore_existing_wallet">恢复已存在的钱包</string>
-    <string name="import_existing_wallet">导入已存在的钱包</string>
+    <string name="restore_existing_wallet">恢复已有钱包</string>
+    <string name="import_existing_wallet">导入已有钱包</string>
     <string name="import_watching_only_wallet">导入观察钱包</string>
     <string name="opening_wallet">正在打开钱包…</string>
     <string name="opening_wallets">正在打开钱包…</string>
@@ -573,7 +573,7 @@
     <string name="mixer_has_stopped_running">cspp混币器已停止运行</string>
     <string name="no_mixable_output">未混合的账户没有可混合的输出</string>
     <string name="new_caps">新的</string>
-    <string name="privacy_is_here">隐私功能在这</string>
+    <string name="privacy_is_here">隐私功能在这！</string>
     <string name="privacy_intro_desc">你现在可以在App中使用StakeShuffle混币器去混合你的DCR硬币</string>
     <string name="dismiss">取消</string>
     <string name="setup_mixer">设置混币器</string>
