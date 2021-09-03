@@ -28,9 +28,9 @@ var PtBr = map[string]string{
 	"Confirm Registration":  "确认注册",
 	"app_pw_reg":            "输入应用程序密码以确认注册DEX。", 
 	"reg_confirm_submit":    `当您发送此表格时, <span id="feeDisplay"></span> DCR将从您指定的钱包中支出，以支付注册费。`,
-	"lot_size_headsup": `O tamanho do lote para <span id="dcrBaseMarketName" class="mono"></span> mercado é <span id="dexDCRLotSize"></span> DCR.
-		Todas trocas nesse mercado acontecem em múltiplos desse tamanho de lot.
-		Este é o mínimo valor possível para troca em DCR.`,
+	"lot_size_headsup": `<span id="dcrBaseMarketName" class="mono"></span> 市场的批量大小是 <span id="dexDCRLotSize"></span> DCR.
+		该市场中的所有交易均以该手数的倍数进行。
+		这是 DCR 中交换的最小可能值。`,
 	"Password":                       "密码",
 	"Register":                       "注册",
 	"Authorize Export":               "授权转出",
