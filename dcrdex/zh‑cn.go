@@ -69,7 +69,7 @@ var PtBr = map[string]string{
 	"Price":                          "价格",
 	"Lots":                           "批",
 	"min trade is about":             "最小交换结束了",
-	"immediate_explanation":          "Se o pedido não preencher completamente durante o próximo ciclo de encontros, qualquer quantia restante não será reservada ou combinada novamente nos próximos ciclos.", // revisar
+	"immediate_explanation":          "如果订单在下一个周期中没有完成，任何剩余的金额将不会在下一个周期中保留或重新组合。", // revisar
 	"Immediate or cancel":            "立即或取消",
 	"Balances":                       "余额",
 	"outdated_tooltip":               "账户可能已过期。请连接到钱包进行更新。",
@@ -92,7 +92,7 @@ var PtBr = map[string]string{
 	"order details":                  "订单详情",
 	"verify_order":                   `检查<span id="vSideHeader"></span> 请求`,
 	"You are submitting an order to": "您正在提交订单至",
-	"at a rate of":                   "Na taxa de",
+	"at a rate of":                   "汇率",
 	"for a total of":                 "总共",
 	"verify_market":                  "这是一个市价单，将匹配订单簿中的最佳订单。根据当前的平均市场价，您将收到", //revisar
 	"auth_order_app_pw":              "使用应用密码授权此订单。",
@@ -108,7 +108,7 @@ var PtBr = map[string]string{
 	"Asking":                    "问",
 	"Fees":                      "费用",
 	"order_fees_tooltip":        "区块链交易费用，通常由矿工收取。Decred DEX 不收取交易费用。",
-	"Matches":                   "Combinações",
+	"Matches":                   "组合",
 	"Match ID":                  "匹配ID",
 	"Time":                      "时间",
 	"ago":                       "前",
