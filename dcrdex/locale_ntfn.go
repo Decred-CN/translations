@@ -1,331 +1,331 @@
 var TemplateKeys = map[string]string{
 	// [host]
-	SubjectAccountRegistered: "You may now trade at %s",
+	SubjectAccountRegistered: "您现在可以在 %s 进行交易",
 	// [confs, host]
-	SubjectFeePaymentInProgress: "Waiting for %d confirmations before trading at %s",
+	SubjectFeePaymentInProgress: "在 %s 交易之前等待 %d 确认",
 	// [confs, required confs]
-	SubjectRegUpdate: "Fee payment confirmations %v/%v",
+	SubjectRegUpdate: "费用支付确认 %v/%v",
 	// [host, error]
-	SubjectFeePaymentError: "Error encountered while paying fees to %s: %v",
+	SubjectFeePaymentError: "向 %s 支付费用时遇到错误: %v",
 	// [host, error]
-	SubjectAccountUnlockError: "error unlocking account for %s: %v",
+	SubjectAccountUnlockError: "解锁 %s 的帐户时出错: %v",
 	// [host]
-	SubjectFeeCoinError: "Empty fee coin for %s.",
+	SubjectFeeCoinError: "%s 的费用硬币为空。",
 	// [host]
-	SubjectWalletConnectionWarning: "Incomplete registration detected for %s, but failed to connect to the Decred wallet",
+	SubjectWalletConnectionWarning: "检测到 %s 的注册不完整，无法连接到 Decred 钱包",
 	// [host, error]
-	SubjectWalletUnlockError: "Connected to Decred wallet to complete registration at %s, but failed to unlock: %v",
+	SubjectWalletUnlockError: "已连接到 Decred 钱包以在 %s 完成注册，但无法解锁：%v",
 	// [ticker, error]
-	SubjectWithdrawError: "Error encountered during %s withdraw: %v",
+	SubjectWithdrawError: "在 %s 提取过程中遇到错误: %v",
 	// [ticker, coin ID]
-	SubjectWithdrawSend: "Withdraw of %s has completed successfully. Coin ID = %s",
+	SubjectWithdrawSend: "%s 的提款已成功完成。硬币 ID = %s",
 	// [error]
-	SubjectOrderLoadFailure: "Some orders failed to load from the database: %v",
+	SubjectOrderLoadFailure: "某些订单无法从数据库加载: %v",
 	// [qty, ticker, token]
-	SubjectYoloPlaced: "selling %.8f %s at market rate (%s)",
+	SubjectYoloPlaced: "以市场价格 (%s) 出售 %.8f %s",
 	// [sell string, qty, ticker, rate string, token]
 	SubjectOrderPlaced: "%sing %.8f %s, rate = %s (%s)",
 	// [missing count, token, host]
-	SubjectMissingMatches: "%d matches for order %s were not reported by %q and are considered revoked",
+	SubjectMissingMatches: "%d 订单 %s 的匹配没有被 %q 报告并被视为已撤销",
 	// [token, error]
-	SubjectWalletMissing: "Wallet retrieval error for active order %s: %v",
+	SubjectWalletMissing: "活动订单 %s 的钱包检索错误: %v",
 	// [side, token, match status]
-	SubjectMatchErrorCoin: "Match %s for order %s is in state %s, but has no maker swap coin.",
+	SubjectMatchErrorCoin: "订单 %s 的匹配 %s 处于状态 %s，但没有交换硬币服务商。",
 	// [side, token, match status]
-	SubjectMatchErrorContract: "Match %s for order %s is in state %s, but has no maker swap contract.",
+	SubjectMatchErrorContract: "订单 %s 的匹配 %s 处于状态 %s，没有服务商交换合约。",
 	// [ticker, contract, token, error]
-	SubjectMatchRecoveryError: "Error auditing counter-party's swap contract (%s %v) during swap recovery on order %s: %v",
+	SubjectMatchRecoveryError: "在订单 %s: %v 的交易恢复期间审核对方的交易合约 (%s %v) 时出错",
 	// [token]
-	SubjectOrderCoinError: "No funding coins recorded for active order %s",
+	SubjectOrderCoinError: "没有为活动订单 %s 记录资金硬币",
 	// [token, ticker, error]
-	SubjectOrderCoinFetchError: "Source coins retrieval error for order %s (%s): %v",
+	SubjectOrderCoinFetchError: "订单 %s (%s) 的源硬币检索错误: %v",
 	// [token, ticker, error]
-	SubjectMissedCancel: "Cancel order did not match for order %s. This can happen if the cancel order is submitted in the same epoch as the trade or if the target order is fully executed before matching with the cancel order.",
+	SubjectMissedCancel: "取消订单与订单 %s 不匹配。如果取消订单与交易在同一时期提交，或者目标订单在与取消订单匹配之前完全执行，则可能发生这种情况。",
 	// [capitalized sell string, base ticker, quote ticker, host, token]
-	SubjectOrderCanceled: "%s order on %s-%s at %s has been canceled (%s)",
+	SubjectOrderCanceled: "%s 的 %s-%s 的 %s 订单已被取消 (%s)",
 	// [capitalized sell string, base ticker, quote ticker, fill percent, token]
-	SubjectMatchesMade: "%s order on %s-%s %.1f%% filled (%s)",
+	SubjectMatchesMade: "%s 订单 %s-%s %.1f%% 已完成 (%s)",
 	// [qty, ticker, token]
-	SubjectSwapSendError: "Error encountered sending a swap output(s) worth %.8f %s on order %s",
+	SubjectSwapSendError: "在订单 %s 上发送价值 %.8f %s 的交换输出时遇到错误",
 	// [match, error]
-	SubjectInitError: "Error notifying DEX of swap for match %s: %v",
+	SubjectInitError: "通知 DEX 匹配 %s 的交换时出错：%v",
 	// [match, error]
-	SubjectReportRedeemError: "Error notifying DEX of redemption for match %s: %v",
+	SubjectReportRedeemError: "错误通知 DEX 匹配 %s: %v",
 	// [qty, ticker, token]
-	SubjectSwapsInitiated: "Sent swaps worth %.8f %s on order %s",
+	SubjectSwapsInitiated: "已发送价值 %.8f %s 的交易，订单 %s",
 	// [qty, ticker, token]
-	SubjectRedemptionError: "Error encountered sending redemptions worth %.8f %s on order %s",
+	SubjectRedemptionError: "在订单 %s 上发送价值 %.8f %s 的兑换时遇到错误",
 	// [qty, ticker, token]
-	SubjectMatchComplete: "Redeemed %.8f %s on order %s",
+	SubjectMatchComplete: "在订单 %s 上兑换了 %.8f %s",
 	// [qty, ticker, token]
-	SubjectRefundFailure: "Refunded %.8f %s on order %s, with some errors",
+	SubjectRefundFailure: "退款％.8f％s的订单％S，但出现一些错误",
 	// [qty, ticker, token]
-	SubjectMatchesRefunded: "Refunded %.8f %s on order %s",
+	SubjectMatchesRefunded: "已退款 %.8f %s 订单 %s",
 	// [match ID token]
-	SubjectMatchRevoked: "Match %s has been revoked",
+	SubjectMatchRevoked: "匹配 %s 已被撤销",
 	// [token, market name, host]
-	SubjectOrderRevoked: "Order %s on market %s at %s has been revoked by the server",
+	SubjectOrderRevoked: "%s 市场 %s 上的订单 %s 已被服务器撤销",
 	// [token, market name, host]
-	SubjectOrderAutoRevoked: "Order %s on market %s at %s revoked due to market suspension",
+	SubjectOrderAutoRevoked: "%s 市场 %s 上的订单 %s 由于市场暂停而被撤销",
 	// [ticker, coin ID, match]
-	SubjectMatchRecovered: "Found maker's redemption (%s: %v) and validated secret for match %s",
+	SubjectMatchRecovered: "找到制造商的赎回 (%s: %v) 和匹配 %s 的验证秘密",
 	// [token]
-	SubjectCancellingOrder: "A cancel order has been submitted for order %s",
+	SubjectCancellingOrder: "已为订单 %s 提交了取消操作",
 	// [token, old status, new status]
-	SubjectOrderStatusUpdate: "Status of order %v revised from %v to %v",
+	SubjectOrderStatusUpdate: "订单 %v 的状态从 %v 修改为 %v",
 	// [count, host, token]
-	SubjectMatchResolutionError: "%d matches reported by %s were not found for %s.",
+	SubjectMatchResolutionError: "%s 报告的 %d 个匹配项没有找到 %s。",
 	// [token]
-	SubjectFailedCancel: "Cancel order for order %s stuck in Epoch status for 2 epochs and is now deleted.",
+	SubjectFailedCancel: "取消订单 %s 的订单，该订单在 Epoch 状态中停留了 2 个时期，现在已被删除。",
 	// [coin ID, ticker, match]
-	SubjectAuditTrouble: "Still searching for counterparty's contract coin %v (%s) for match %s. Are your internet and wallet connections good?",
+	SubjectAuditTrouble: "仍在搜索交易对手的合约交易 %v (%s) 以匹配 %s。您的互联网和钱包连接是否良好？",
 	// [host, error]
 	SubjectDexAuthError: "%s: %v",
 	// [count, host]
-	SubjectUnknownOrders: "%d active orders reported by DEX %s were not found.",
+	SubjectUnknownOrders: "未找到 DEX %s 报告的 %d 个活动订单。",
 	// [count]
-	SubjectOrdersReconciled: "Statuses updated for %d orders.",
+	SubjectOrdersReconciled: "%d 个订单的状态已更新。",
 	// [ticker, address]
-	SubjectWalletConfigurationUpdated: "Configuration for %s wallet has been updated. Deposit address = %s",
+	SubjectWalletConfigurationUpdated: "%s 钱包的配置已更新。存款地址 = %s",
 	//  [ticker]
-	SubjectWalletPasswordUpdated: "Password for %s wallet has been updated.",
+	SubjectWalletPasswordUpdated: "%s 钱包的密码已更新。",
 	// [market name, host, time]
-	SubjectMarketSuspendScheduled: "Market %s at %s is now scheduled for suspension at %v",
+	SubjectMarketSuspendScheduled: "%s 的市场 %s 现在计划在 %v 暂停",
 	// [market name, host]
-	SubjectMarketSuspended: "Trading for market %s at %s is now suspended.",
+	SubjectMarketSuspended: "%s 市场 %s 的交易现已暂停。",
 	// [market name, host]
-	SubjectMarketSuspendedWithPurge: "Trading for market %s at %s is now suspended. All booked orders are now PURGED.",
+	SubjectMarketSuspendedWithPurge: "%s 市场 %s 的交易现已暂停。所有预订的订单现在都已清除。",
 	// [market name, host, time]
-	SubjectMarketResumeScheduled: "Market %s at %s is now scheduled for resumption at %v",
+	SubjectMarketResumeScheduled: "%s 的市场 %s 现在计划在 %v 恢复",
 	// [market name, host, epoch]
-	SubjectMarketResumed: "Market %s at %s has resumed trading at epoch %d",
+	SubjectMarketResumed: "M%s 的市场 %s 已在epoch %d 恢复交易",
 	// [host]
-	SubjectUpgradeNeeded: "You may need to update your client to trade at %s.",
+	SubjectUpgradeNeeded: "您可能需要更新您的客户端以在 %s 进行交易。",
 	// [host]
-	SubjectDEXConnected: "%s is connected",
+	SubjectDEXConnected: "%s 已连接",
 	// [host]
-	SubjectDEXDisconnected: "%s is disconnected",
+	SubjectDEXDisconnected: "%s 已断开连接",
 	// [host, rule, time, details]
-	SubjectPenalized: "Penalty from DEX at %s\nlast broken rule: %s\ntime: %v\ndetails:\n\"%s\"\n",
+	SubjectPenalized: "来自 DEX 的惩罚在 %s \n最后违反规则：%s \n时间：%v \n详细信息：\n \" %s \" \n ",
 }
 
 // traduzir os subject tudo
 var BrPtLocales = map[string]*Translation{
 	SubjectDEXConnected: &Translation{
-		Subject:  "DEX conectado",
-		Template: "%s está conectado",
+		Subject:  "DEX 连接",
+		Template: "%s 已连接",
 	},
 	SubjectAccountRegistered: &Translation{
-		Subject:  "Conta Registrada",
-		Template: "Você agora pode trocar em %s",
+		Subject:  "注册账户",
+		Template: "您现在可以切换到 %s",
 	},
 	SubjectFeePaymentInProgress: &Translation{
-		Subject:  "Pagamento da Taxa em andamento",
-		Template: "Esperando por %d confirmações antes de trocar em %s",
+		Subject:  "费用支付中",
+		Template: "在切换到 %s 之前等待 %d 次确认",
 	},
 	SubjectRegUpdate: &Translation{
-		Subject:  "Atualização de registro",
-		Template: "Confirmações da taxa %v/%v",
+		Subject:  "记录更新",
+		Template: "%v/%v 费率确认",
 	},
 	SubjectFeePaymentError: &Translation{
-		Subject:  "Erro no Pagamento da Taxa",
-		Template: "Erro enquanto pagando taxa para %s: %v",
+		Subject:  "费用支付错误",
+		Template: "为 %s 支付费率时出错：%v",
 	},
 	SubjectAccountUnlockError: &Translation{
-		Subject:  "Erro ao Destrancar carteira",
-		Template: "erro destrancando conta %s: %v",
+		Subject:  "解锁钱包时出错",
+		Template: "解锁帐户 %s 时出错：%v",
 	},
 	SubjectFeeCoinError: &Translation{
-		Subject:  "Erro na Taxa",
-		Template: "Taxa vazia para %s.",
+		Subject:  "汇率错误",
+		Template: "%s 的空置率。",
 	},
 	SubjectWalletConnectionWarning: &Translation{
-		Subject:  "Aviso de Conexão com a Carteira",
-		Template: "Registro incompleto detectado para %s, mas falhou ao conectar com carteira decred",
+		Subject:  "钱包连接通知",
+		Template: "检测到 %s 的注册不完整，无法连接 decred 钱包",
 	},
 	SubjectWalletUnlockError: &Translation{
-		Subject:  "Erro ao Destravar Carteira",
-		Template: "Conectado com carteira decred para completar o registro em %s, mas falha ao destrancar: %v",
+		Subject:  "解锁钱包时出错",
+		Template: "与 decred 钱包连接以在 %s 上完成注册，但无法解锁：%v",
 	},
 	SubjectWithdrawError: &Translation{
-		Subject:  "Erro Retirada",
-		Template: "Erro encontrado durante retirada de %s: %v",
+		Subject:  "提款错误",
+		Template: "删除 %s 时遇到错误：%v",
 	},
 	SubjectWithdrawSend: &Translation{
-		Template: "Retirada de %s foi completada com sucesso. ID da moeda = %s",
-		Subject:  "Retirada Enviada",
+		Template: "成功完成 %s 的提款。货币 ID = %s",
+		Subject:  "提款已发送",
 	},
 	SubjectOrderLoadFailure: &Translation{
-		Template: "Alguns pedidos falharam ao carregar da base de dados: %v",
-		Subject:  "Carregamendo de Pedidos Falhou",
+		Template: "某些请求无法从数据库加载：%v",
+		Subject:  "请求加载失败",
 	},
 	SubjectYoloPlaced: &Translation{
-		Template: "vendendo %.8f %s a taxa de mercado (%s)",
-		Subject:  "Ordem de Mercado Colocada",
+		Template: "以市场价格 (%s) 出售 %.8f %s",
+		Subject:  "下达市价单",
 	},
 	SubjectOrderPlaced: &Translation{
-		Subject:  "Ordem Colocada",
-		Template: "%sing %.8f %s, valor = %s (%s)",
+		Subject:  "已下订单",
+		Template: "%sing %.8f %s，值 = %s (%s)",
 	},
 	SubjectMissingMatches: &Translation{
-		Template: "%d combinações para pedidos %s não foram reportados por %q e foram considerados revocados",
-		Subject:  "Pedidos Faltando Combinações",
+		Template: "%s 订单的 %d 匹配项未被 %q 报告并被视为已撤销",
+		Subject:  "订单缺失匹配",
 	},
 	SubjectWalletMissing: &Translation{
-		Template: "Erro ao recuperar pedidos ativos por carteira %s: %v",
-		Subject:  "Carteira Faltando",
+		Template: "通过钱包 %s 检索活动订单时出错：%v",
+		Subject:  "丢失的钱包",
 	},
 	SubjectMatchErrorCoin: &Translation{
-		Subject:  "Erro combinação de Moedas",
-		Template: "Combinação %s para pedido %s está no estado %s, mas não há um executador para trocar moedas.",
+		Subject:  "货币不匹配错误",
+		Template: "订单 %s 的组合 %s 处于状态 %s，但没有用于交换货币的运行程序。",
 	},
 	SubjectMatchErrorContract: &Translation{
-		Template: "Combinação %s para pedido %s está no estado %s, mas não há um executador para trocar moedas.",
-		Subject:  "Erro na Combinação de Contrato",
+		Template: "订单 %s 的组合 %s 处于状态 %s，但没有用于交换货币的运行程序。",
+		Subject:  "合约组合错误",
 	},
 	SubjectMatchRecoveryError: &Translation{
-		Template: "Erro auditando contrato de troca da contraparte (%s %v) durante troca recuperado no pedido %s: %v",
-		Subject:  "Erro Recuperando Combinações",
+		Template: "在检索订单 %s:%v 的交易期间审核交易对手交易合约 (%s %v) 时出错",
+		Subject:  "检索匹配时出错",
 	},
 	SubjectOrderCoinError: &Translation{
-		Template: "Não há Moedas de financiamento registradas para pedidos ativos %s",
-		Subject:  "Erro no Pedido da Moeda",
+		Template: "没有为活动订单 %s 注册资金货币",
+		Subject:  "硬币订单错误",
 	},
 	SubjectOrderCoinFetchError: &Translation{
-		Template: "Erro ao recuperar moedas de origem para pedido %s (%s): %v",
-		Subject:  "Erro na Recuperação do Pedido de Moedas",
+		Template: "检索订单 %s (%s) 的源硬币时出错：%v",
+		Subject:  "硬币订单恢复错误",
 	},
 	SubjectMissedCancel: &Translation{
-		Template: "Pedido de cancelamento não combinou para pedido %s. Isto pode acontecer se o pedido de cancelamento foi enviado no mesmo epoque do que a troca ou se o pedido foi completamente executado antes da ordem de cancelamento ser executada.",
-		Subject:  "Cancelamento Perdido",
+		Template: "取消订单与订单 %s 不匹配。如果取消订单与交易所同时发送，或者订单在取消订单执行之前已完全执行，则可能发生这种情况。",
+		Subject:  "丢失取消",
 	},
 	SubjectOrderCanceled: &Translation{
-		Template: "%s pedido sobre %s-%s em %s foi cancelado (%s)",
-		Subject:  "Cancelamento de Pedido",
+		Template: "%s 上 %s-%s 上的 %s 请求已被取消 (%s)",
+		Subject:  "订单取消",
 	},
 	SubjectMatchesMade: &Translation{
-		Template: "%s pedido sobre %s-%s %.1f%% preenchido (%s)",
-		Subject:  "Combinações Feitas",
+		Template: "%s 请求超过 %s-%s %.1f%% 已填充（%s）",
+		Subject:  "匹配完成",
 	},
 	SubjectSwapSendError: &Translation{
-		Template: "Erro encontrado ao enviar a troca com output(s) no valor de %.8f %s no pedido %s",
-		Subject:  "Erro ao Enviar Troca",
+		Template: "在以 %s 的顺序发送价值 %.8f %s 的输出的交换时遇到错误",
+		Subject:  "发送交换时出错",
 	},
 	SubjectInitError: &Translation{
-		Template: "Erro notificando DEX da troca %s por combinação: %v",
-		Subject:  "Erro na Troca",
+		Template: "错误通知 DEX %s 交换组合：%v",
+		Subject:  "交换错误",
 	},
 	SubjectReportRedeemError: &Translation{
-		Template: "Erro notificando DEX da redenção %s por combinação: %v",
-		Subject:  "Reportando Erro na redenção",
+		Template: "通知 DEX %s 赎回时出错：%v",
+		Subject:  "报销错误",
 	},
 	SubjectSwapsInitiated: &Translation{
-		Template: "Enviar trocas no valor de %.8f %s no pedido %s",
-		Subject:  "Trocas Iniciadas",
+		Template: "在订单 %s 上发送价值 %.8f %s 的交易",
+		Subject:  "发起交流",
 	},
 	SubjectRedemptionError: &Translation{
-		Template: "Erro encontrado enviado redenção no valor de %.8f %s no pedido %s",
-		Subject:  "Erro na Redenção",
+		Template: "在订单 %s 上发现发送价值 %.8f %s 的赎回错误",
+		Subject:  "赎回错误",
 	},
 	SubjectMatchComplete: &Translation{
-		Template: "Resgatado %.8f %s no pedido %s",
-		Subject:  "Combinação Completa",
+		Template: "在订单 %s 上兑换了 %.8f %s",
+		Subject:  "完全匹配",
 	},
 	SubjectRefundFailure: &Translation{
-		Template: "Devolvidos %.8f %s no pedido %s, com algum erro",
-		Subject:  "Erro no Reembolso",
+		Template: "按顺序 %s 返回 %.8f %s，有一些错误",
+		Subject:  "退款错误",
 	},
 	SubjectMatchesRefunded: &Translation{
-		Template: "Devolvidos %.8f %s no pedido %s",
-		Subject:  "Reembolso Sucedido",
+		Template: "在订单 %s 上返回了 %.8f %s",
+		Subject:  "退款成功",
 	},
 	SubjectMatchRevoked: &Translation{
-		Template: "Combinação %s foi revocada",
-		Subject:  "Combinação Revocada",
+		Template: "组合 %s 已被撤销",
+		Subject:  "撤销组合",
 	},
 	SubjectOrderRevoked: &Translation{
-		Template: "Pedido %s no mercado %s em %s foi revocado pelo servidor",
-		Subject:  "Pedido Revocado",
+		Template: "%s 市场 %s 的订单 %s 已被服务器撤销",
+		Subject:  "撤销订单",
 	},
 	SubjectOrderAutoRevoked: &Translation{
-		Template: "Pedido %s no mercado %s em %s revocado por suspenção do mercado",
-		Subject:  "Pedido Revocado Automatiamente",
+		Template: "%s 市场 %s 中的订单 %s 被市场暂停撤销",
+		Subject:  "订单自动撤销",
 	},
 	SubjectMatchRecovered: &Translation{
-		Template: "Encontrado redenção do executador (%s: %v) e validado segredo para pedido %s",
-		Subject:  "Pedido Recuperado",
+		Template: "找到赎回 (%s: %v) 并验证了请求 %s 的秘密",
+		Subject:  "恢复订单",
 	},
 	SubjectCancellingOrder: &Translation{
-		Template: "Uma ordem de cancelamento foi submetida para o pedido %s",
-		Subject:  "Cancelando Pedido",
+		Template: "已为订单 %s 提交取消订单",
+		Subject:  "取消订单",
 	},
 	SubjectOrderStatusUpdate: &Translation{
-		Template: "Status do pedido %v revisado de %v para %v",
-		Subject:  "Status do Pedido Atualizado",
+		Template: "订单状态 %v 从 %v 修改为 %v",
+		Subject:  "订单状态更新",
 	},
 	SubjectMatchResolutionError: &Translation{
-		Template: "%d combinações reportada para %s não foram encontradas para %s.",
-		Subject:  "Erro na Resolução do Pedido",
+		Template: "没有为 %s 找到为 %s 报告的 %d 个匹配项。",
+		Subject:  "订单解析错误",
 	},
 	SubjectFailedCancel: &Translation{
-		Template: "Ordem de cancelamento para pedido %s presa em estado de Epoque por 2 epoques e foi agora deletado.",
-		Subject:  "Falhou Cancelamento",
+		Template: "取消订单 %s 的订单 %s 处于 Epoque 状态 2 个 epoques，现在已被删除。",
+		Subject:  "取消失败",
 	},
 	SubjectAuditTrouble: &Translation{
-		Template: "Continua procurando por contrato de contrapartes para moeda %v (%s) para combinação %s. Sua internet e conexão com a carteira estão ok?",
-		Subject:  "Problemas ao Auditar",
+		Template: "继续寻找组合 %s 的货币 %v (%s) 的交易对手合约。您的互联网和钱包连接是否正常？",
+		Subject:  "审计时的问题",
 	},
 	SubjectDexAuthError: &Translation{
 		Template: "%s: %v",
-		Subject:  "Erro na Autenticação",
+		Subject:  "身份验证错误",
 	},
 	SubjectUnknownOrders: &Translation{
-		Template: "%d pedidos ativos reportados pela DEX %s não foram encontrados.",
-		Subject:  "DEX Reportou Pedidos Desconhecidos",
+		Template: "未找到 DEX %s 报告的 %d 个活动订单。",
+		Subject:  "DEX 报告的未知请求",
 	},
 	SubjectOrdersReconciled: &Translation{
-		Template: "Estados atualizados para %d pedidos.",
-		Subject:  "Pedidos Reconciliados com DEX",
+		Template: "%d 个订单的更新状态。",
+		Subject:  "与 DEX 协调的订单",
 	},
 	SubjectWalletConfigurationUpdated: &Translation{
-		Template: "configuração para carteira %s foi atualizada. Endereço de depósito = %s",
-		Subject:  "Configurações da Carteira Atualizada",
+		Template: "钱包 %s 的配置已更新。存款地址 = %s",
+		Subject:  "更新的钱包设置a",
 	},
 	SubjectWalletPasswordUpdated: &Translation{
-		Template: "Senha para carteira %s foi atualizada.",
-		Subject:  "Senha da Carteira Atualizada",
+		Template: "钱包 %s 的密码已更新。",
+		Subject:  "钱包密码更新",
 	},
 	SubjectMarketSuspendScheduled: &Translation{
-		Template: "Mercado %s em %s está agora agendado para suspensão em %v",
-		Subject:  "Suspensão de Mercado Agendada",
+		Template: "%s 上的市场 %s 现在计划在 %v 暂停",
+		Subject:  "市场暂停预定",
 	},
 	SubjectMarketSuspended: &Translation{
-		Template: "Trocas no mercado %s em %s está agora suspenso.",
-		Subject:  "Mercado Suspenso",
+		Template: "%s 的 %s 市场交易现已暂停。",
+		Subject:  "暂停市场",
 	},
 	SubjectMarketSuspendedWithPurge: &Translation{
-		Template: "Trocas no mercado %s em %s está agora suspenso. Todos pedidos no livro de ofertas foram agora EXPURGADOS.",
-		Subject:  "Mercado Suspenso, Pedidos Expurgados",
+		Template: "%s 的市场交易 %s 现已暂停。订单簿中的所有订单现已被删除。",
+		Subject:  "暂停市场，清除订单",
 	},
 	SubjectMarketResumeScheduled: &Translation{
-		Template: "Mercado %s em %s está agora agendado para resumir em %v",
-		Subject:  "Resumo do Mercado Agendado",
+		Template: "%s 上的市场 %s 现在计划在 %v 恢",
+		Subject:  "预定市场摘要",
 	},
 	SubjectMarketResumed: &Translation{
-		Template: "Mercado %s em %s foi resumido para trocas no epoque %d",
-		Subject:  "Mercado Resumido",
+		Template: "%s 上的市场 %s 已汇总用于时代 %d 中的交易",
+		Subject:  "总结市场",
 	},
 	SubjectUpgradeNeeded: &Translation{
-		Template: "Você pode precisar atualizar seu cliente para trocas em %s.",
-		Subject:  "Atualização Necessária",
+		Template: "您可能需要更新您的帐户以进行 %s 的交易。",
+		Subject:  "需要更新",
 	},
 	SubjectDEXDisconnected: &Translation{
-		Template: "%s está desconectado",
-		Subject:  "Server Disconectado",
+		Template: "%s 离线",
+		Subject:  "服务器断开连接",
 	},
 	SubjectPenalized: &Translation{
-		Template: "Penalidade de DEX em %s\núltima regra quebrada: %s\nhorário: %v\ndetalhes:\n\"%s\"\n",
-		Subject:  "Server Penalizou Você",
+		Template: "%s 上的 DEX 惩罚\n最后一条规则被破坏：%s \n时间：%v \n详细信息：\n \" %s \" \n",
+		Subject:  "服务器惩罚了你",
 	},
 }
 
