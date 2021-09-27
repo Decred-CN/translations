@@ -1,0 +1,605 @@
+//
+//  Localizable.strings
+//  Decred Wallet
+//
+// Copyright (c) 2018-2020 The Decred developers
+// Use of this source code is governed by an ISC
+// license that can be found in the LICENSE file.
+
+/* StartScreenViewController */
+"openingWallet" = "Opening wallet...";
+
+/* Wallet Setup */
+"createNewWallet" = "Create a new wallet";
+"restoreExistingWallet" = "Restore an existing wallet";
+"wallet" = "Wallet";
+"introMessage" = "Welcome to Decred Wallet,\n a secure & open-source mobile wallet.";
+"myWallet" = "mywallet";
+"default_" = "default";
+"migratingWallet" = "Migrating wallet";
+"dataFileErrorMsg" = "You have an older device with less ram. For it to work properly we need to upgrade the database being used for your wallet. You will need to re-enter your seed phrase. Proceeding will clear the wallet data so you can recover from your seed phrase. Are you sure you want to proceed?";
+
+/* Create New Wallet(Seed display view) */
+"settingUpYourWallet" = "Setting Up Decred Wallet";
+
+/* Confirm NewWallet Seed */
+"confirmToShowSeed" = "Confirm to show seed";
+"confirmToVerifySeed" = "Confirm to verify seed";
+
+/* Recover Existing Wallet */
+"wordNumber" = "%d";
+"notAllSeedsAreEntered" = "Not all seeds are entered. Please, check input fields and enter all seeds.";
+"incorrectSeedEntered" = "Failed to restore. Please verify all words and try again.";
+"seedRestoreHeader" = "Restore from seed phrase";
+"seedRestoreInfo" = "Enter your seed phrase in the correct order.";
+"restore" = "Restore";
+"success" = "Success";
+"getStarted" = "Get started";
+"restoreSuccessTitle" = "Your wallet is successfully restored.";
+
+/*Import Watch-only wallet*/
+"watchWalletImported" = "Watch-only wallet imported";
+"extendPublicKeyInfo" = "In Decrediton, under the Accounts section, expand the account you want to watch, and tap on Reveal Pubkey";
+"watchWalletTitle" = "Create watch only wallet";
+
+/* Unlock Wallet Prompt */
+"unlockWithStartupCode" = "Unlock with startup %@";
+"unlock" = "Unlock";
+"wrongSecurityCode" = "Wrong %@ %@. Please try again.";
+
+/* Password Setup */
+"emptyPasswordNotAllowed" = "Password cannot be empty";
+"passwordsDoNotMatch" = "Passwords do not match";
+"createPassword" = "Create a %@ password";
+
+/* Request Password */
+"enterCurrentSpendingPassword" = "Enter Current Spending Password";
+"promptStartupPassword" = "Enter Current Startup Password";
+"password" = "Password";
+"invalidInput" = "invalid input.";
+"passwordPlaceholder"="%@ password";
+"confirmPasswordPlaceholder"="Confirm %@ password";
+
+/* Request PIN and PIN Setup */
+"enterPIN" = "Enter %@ PIN";
+"enterCurrentSpendingPIN" = "Enter Current Spending PIN";
+"promptStartupPIN" = "Enter Current Startup PIN";
+"createPIN" = "Create a %@ PIN";
+"confirmPIN" = "Enter %@ PIN again";
+"pinsDidNotMatch" = "PINs did not match. Try again.";
+"pin" = "PIN";
+"next" = "Next";
+"create" = "Create";
+
+/* Request Biometric */
+"promptStartupPassOrPIN" = "Use Startup PIN/Password";
+"promptTouchIDUsageUsage" = "Touch ID is required to use Decred Wallet";
+"promptFaceIDUsageUsage" = "Face ID is required to use Decred Wallet";
+"useFaceID" = "Use Face ID";
+"useTouchId" = "Use Touch ID";
+"enableWithStartupCode" = "Enable with startup %@";
+
+/* Overview - unlock wallets for account discovery */
+"unlockToResumeRestoration" = "Unlock to resume restoration";
+"unlockWalletForAccountDiscovery" = "The restoration process to discover your accounts was interrupted in the last sync.\n\nUnlock %@ to resume the process.";
+
+/* No Wifi Sync Connection */
+"no" = "No";
+"yes" = "Yes";
+"always" = "Always";
+
+/* Sync progress view */
+"loading" = "Loading...";
+"waitingForOtherWallets" = "Waiting for other wallets";
+"fetchedHeaders" = "%d of %d";
+"headersFetchProgress" = "Fetching block headers · %d%%";
+"headersScannedProgress" = "Scanning block headers · %d%%";
+"bestBlockAgebehind" = "%@ behind";
+"blockHeaderScanned" = "Block header scanned";
+"addressDiscoveryProgressOver" = "~%d%% (over)";
+"addressDiscoveryProgressThrough" = "~%d%%";
+"scanningTotalHeaders" = "%d of %d";
+"synchronizing" = "Syncing...";
+"syncTotalProgress" = "%d%% completed, %@ remaining.";
+"total"  = "total:";
+"latestBlockAge" = "Latest block %d% :- %@";
+"blockHeadersFetched" = "Block headers fetched";
+"syncProgressComplete" = "%d%%";
+"syncTimeLeft" = "%@ left";
+"syncSteps" = "Step %d/3";
+"syncingProgress" = "Syncing progress";
+"cannotSyncWithoutNetworkConnection" = "Cannot sync without network connection.";
+"internetConnectionRequired" = "Internet connection required.";
+"restartingSync" = "Restarting sync...";
+"discoveringUsedAddresses" = "Discovering used addresses.";
+"syncError" = "Sync error.";
+"now" = "now";
+"secondsAgo" = "%ds ago";
+"minAgo" = "%dm ago";
+"hrsAgo" = "%dh ago";
+"daysAgo" = "%dd ago";
+"weeksAgo" = "%dw ago";
+"monthsAgo" = "%dmo ago";
+"yearsAgo" =  "%dy ago";
+"totalBalance" = "Total Balance";
+"reconnect" = "Reconnect";
+"disconnect" = "Disconnect";
+"waitForSync" = "Wait for sync to complete";
+"scannedBlocks" = "Scanned blocks";
+"rescanningBlocks" = "Rescanning Blocks...";
+"blocksLeft" = "%d left";
+"errorSyncInProgress" = "Unable to start rescan while sync is in progress";
+"errorRescanInProgress" = "Unable to start rescan while another rescan is already running";
+"rescanProgressNotification" = "Check progress in Overview!";
+"stepCfilter" = "Refetching cfilters for upgrade";
+"fetchingCFilter" = "Fetching cfilters · %d%%";
+"cfilterFetched" = "CFilters fetched";
+"cfiltersLeft" = "%d CFilters left";
+"cfilterFetchedTotal" = "%d of %d";
+
+/* Navigation Menu Items */
+"overview" = "Overview";
+"transactions" = "Transactions";
+"wallets" = "Wallets";
+"more" = "More";
+
+/* Overview */
+"oneWalletNeedBackup" = "1 wallet needs backup";
+"walletsNeedBackup" = "Would you like to backup your seed words now?";
+"seedBackupRecommendation" = "Write down your seed phrase so that you can recover your funds when needed.";
+"goToWallets" = "Go to Wallets";
+"currentTotalBalance" = "Current Total Balance";
+"recentTransactions" = "Recent Transactions";
+"seeAll" = "See all";
+"walletStatus" = "Wallet Status";
+"walletSynced" = "Synced";
+"walletNotSynced" = "Not Synced";
+"connectedTo" = "Connected to %d peers";
+"online" = "Online";
+"offline" = "Offline";
+"showDetails" = "Show details";
+"hideDetails" = "Hide details";
+"connectedPeersCount" = "Connected peers count";
+"noConnectedPeer" = "No connected peers.";
+"peers" = "peers";
+"seeAll" = "See all";
+"walletCreated" = "Wallet created";
+"backUpYourWalletsReminder" = "Remember to back up your wallets as soon as possible.";
+"setupMixingAccounts" = "Setup mixing accounts";
+
+/* Transactions */
+"pending" = "Pending";
+"confirmed" = "Confirmed";
+"voted" = "Voted";
+"ticket" = "Ticket";
+"revoked" = "Revoked";
+"purchased" = "Purchased";
+"tikectPurchase" = "Ticket Purchase";
+"live" = "Live";
+"immature" = "Immature";
+"noTransactions" = "No transactions yet.";
+"sent" = "Sent";
+"received" = "Received";
+"yourself" = "Yourself";
+"staking" = "Staking";
+"coinbase" = "Coinbase";
+"all" = "All";
+"today" = "Today";
+"yesterday" = "Yesterday";
+"days" = "%d days";
+"day" = "%d day";
+"newest" = "Newest";
+"oldest" = "Oldest";
+
+/* Transaction Details */
+"transactionDetails" = "Transaction Details";
+"viewOnDcrdata" = "View on dcrdata";
+"sgCopied" = "%@ copied";
+"amount" = "Amount";
+"fee" = "Fee";
+"type" = "Type";
+"lastBlockValid" = "Last Block Valid";
+"version" = "Version";
+"voteBits" =  "Vote Bits";
+"external" = "External";
+"internal" = "Internal";
+"imported" = "Imported";
+"nullData" = "null data";
+"script" = "script";
+"stakegen" = "stakegen";
+"inputsConsumed" = "%d Inputs consumed";
+"outputsCreated" = "%d Outputs created";
+"confirmations" = "%d Confirmations";
+"confirmations" = "%d Confirmation";
+"transactionID" = "Transaction ID";
+"transferred" = "Transferred";
+"includedInBlock" = "Included in block";
+"howToCopy" = "How to copy";
+"tapOnBlueText" = "Tap on <blue>blue text</blue> to copy the item.";
+"gotIt" = "Got it";
+"toAccountDetail" = "To account";
+"toDetail" = "To";
+"fromAccountDetail" = "From account";
+"fromDetail" = "From";
+"rebroadcast" = "Rebroadcast";
+"rebroadcastTxSuccess" = "Republished unmined transactions to the decred network";
+
+/* Send view */
+"invalidAmount" = "Amount is not valid.";
+"amount8Decimal" = "Amount has more than 8 decimal places.";
+"amount2Decimal" = "Amount has more than 2 decimal places.";
+"amountMaximumAllowed" = "Amount more than maximum allowed.";
+"notEnoughFunds" = "Not enough funds.";
+"notEnoughFundsOrNotConnected" = "Not enough funds (or not connected).";
+"errorGettingMaxSpendable" = "Error getting maximum spendable amount.";
+"notConnected" = "Not connected to Decred network.";
+"invalidTesnetAddress" = "This is not a valid Decred testnet3 address.";
+"invalidMainnetAddress" = "This is not a valid Decred Mainnet address.";
+"invalidDestAddr" = "Destination address is not valid.";
+"from" = "From:";
+"sendHeaderInfo" = "Input or scan the destination wallet address and the amount in DCR to send funds.";
+"destAddr" = "Destination Address";
+"exchangeRateNotFetched" = "Exchange rate not fetched";
+"confirmToSend" = "Confirm to send";
+"sendDCR" = "Send DCR";
+"paste" = "Paste";
+"selectFromAccount" = "Select from account.";
+"failedToSendTryAgain" = "Failed to send. Please try again.";
+"sendToSelf" = "send to self";
+"sendToOthers" = "send to others";
+"transactionFee" = "Transaction Fee";
+"processingTime" = "Processing time";
+"feeRate" = "Fee rate";
+"transactionSize" = "Transaction size";
+"totalCost" = "Total Cost";
+"balanceAfterSend" = "Balance after send";
+"sendWarning" = "Your DCR will be sent and CANNOT be undone.";
+"sendingAccount" = "Sending Account";
+"toSelf" = "To self";
+"toDestinationAddress" = "To destination address";
+"destinationAddress" = "Destination Address";
+"transactionSent" = "Transaction sent";
+
+/* Recieve */
+"walletAddrCopied" = "Address copied";
+"genNewAddr" = "Generate new address";
+"receiveDCR" = "Receive DCR";
+"tapToCopy" = "(Tap to copy)";
+"share" = "Share";
+"receivingAccount" = "Receiving Account";
+"receiveInfo" = "Each time you request a payment, a new address is created to protect your privacy.";
+
+/* Wallets -> Backup seed */
+"notBackedUp" = "Not backed up";
+"backupSeedPhrase" = "Back up seed phrase";
+"backupWarningText" = "Verify your seed phrase backup so you can recover your funds when needed.";
+
+/* Wallets -> Add new wallet */
+"createOrImportWallet" = "Create or import a wallet";
+"confirmToCreateNewWallet" = "Confirm to create new wallet";
+"confirmToImportWallet" = "Confirm to import wallet";
+"walletsLimitError" = "Limit of 1 wallet per 1 gig of ram on the device";
+"walletNameReserved" = "wallet is a reserved prefix";
+"walletNameExists" = "Wallet name exists";
+"importAWatchOnlyWallet" = "Import a watch-only wallet";
+"createWatchOnlyWallet" = "Create watch-only wallet";
+"extendedPublicKey" = "Extended public key";
+"import_" = "Import";
+"keyIsInvalid" = "Key is invalid";
+"disconnectAddWallet" = "Disconnect/cancel sync before adding a wallet";
+
+/* Wallets -> Sign message */
+"signMessage" = "Sign message";
+
+/* Wallets -> Verify message */
+"verifyMessage" = "Verify message";
+
+/* Wallets -> View property */
+"viewProperty" = "View property";
+
+/* Wallets -> Rename wallet */
+"rename" = "Rename";
+"renameWallet" = "Rename wallet";
+"walletName" = "Wallet name";
+"walletRenamed" = "Wallet renamed";
+
+/* Wallet Settings */
+"spendingPinPass" = "Spending PIN/ Password";
+"changeSpendingPinPass" = "Change spending PIN/password";
+"notifications" = "Notifications";
+"incomingTransactions" = "Incoming transactions";
+"removeWalletFromDevice" = "Remove wallet from device";
+"disconnectDeleteWallet"= "Disconnect/cancel sync before deleting wallet";
+"databaseType" = "Database type";
+
+/* Wallet Settings -> Change Spending PIN/Password */
+"confirmToChange" = "Confirm to change";
+"spendingPinPassChanged" = "Spending PIN/password changed";
+
+/* Wallet Settings -> Notifications */
+"silent" = "Silent";
+"vibrationOnly" = "Vibration only";
+"soundOnly" = "Sound only";
+"soundAndVibration" = "Sound and Vibration";
+
+/* Wallets -> Remove wallet */
+"removeWalletWarning" = "Make sure to have the seed phrase backed up before removing the wallet.";
+"confirmToRemove" = "Confirm to remove";
+"walletRemoved" = "Wallet removed";
+"removeWatchWalletPrompt" = "Remove watch-only wallet from device?";
+
+/* Wallets -> Account */
+"spendable" = "Spendable";
+"immatureRewards" = "Immature Rewards";
+"lockedByTickets" = "Locked By Tickets";
+"votingAuthority" = "Voting Authority";
+"immatureStakeGeneration" = "Immature Stake Generation";
+"showProperties" = "Show properties";
+"properties" = "Properties";
+"accountNumber" = "Account Number";
+"hDPath" = "HD Path";
+"keys" = "Keys";
+"hideProperties" = "Hide properties";
+"renameAccount" = "Rename account";
+"accountRenamed" = "Account renamed";
+"noWalletSelected" = "No wallet selected";
+"tapToSelectAccount" = "Tap to select account";
+"selectAccount" = "Select account";
+
+/* Wallets -> Account -> Add new account */
+"addNewAccount" = "Add new account";
+"accountName" = "Account Name";
+"createNewAccount" = "Create new account";
+"accountCreated" = "Account created";
+"createNewAccountNotice" = "Accounts CANNOT be deleted once created.";
+
+/* Security Tools */
+"securityTools" = "Security Tools";
+"securityToolsInfo" = "Various tools that help in different aspects of crypto currency security will be located here.";
+"validateAddresses" = "Validate addresses";
+"validAddress" = "Valid address";
+"validOwnAddr" = "Owned by this wallet";
+"validNotOwnAddr" = "NOT owned by this wallet";
+"invalidAddr" = "Invalid address";
+"validate" = "Validate";
+"enterAnAddressToValidate" = "Enter an address to validate:";
+"address" = "Address";
+"verifyMsgHeaderInfo" = "Enter the address, signature, and message to verifiy:";
+"verifyMessage" = "Verify message";
+"verify" = "Verify";
+"message" = "Message";
+"signature" = "Signature";
+"invalidSignature" = "Invalid signature";
+"verifiedSignature" = "Valid signature";
+"verifyMessagepageInfo" = "After you or your counterparty has generated a signature, you can use this form to verify the validity of the signature. Once you have entered the address, the message and the corresponding signature, you will see VALID if the signature appropriately matches the address and message, otherwise INVALID.";
+"signMsgHeaderInfo" = "Enter an address and message to sign:";
+"signMsgPageInfo" = "Signing a message with an address' private key allows you to prove that you are the owner of a given address to a possible counterparty.";
+"signMessage" = "Sign Message";
+"signSuccesMessage" = "Message signed";
+"signFailedMessage" = "Failed to sign message. Please try again.";
+"sign" = "Sign";
+
+/* Politeia */
+"politeia" = "Politeia";
+"politeiaDetail" = "Proposal Details";
+"poliAbandoned" = "Abandoned";
+"poliInvalid" = "Invalid";
+"poliNotAuthorized" = "Not authorized by author";
+"poliAuthorized" = "Authorized by author";
+"poliVoteStarted" = "Vote started";
+"poliApproved" = "Approved";
+"poliRejected" = "Rejected";
+"poliNonExistent" = "Does not exist";
+"commentCount" = "%d Comments";
+"politeiaVersion" = "version %@";
+"noPoliteia" = "No proposals for selected category.";
+"syncPoliteiaTryAgain" = "There was an error when sync politeia, please try again in Politeia";
+
+/* Settings */
+"startupPinPass" = "Startup PIN/Password";
+"changeStatupPinPass" = "Change startup PIN/Password";
+"spendUnconfirmedFund" = "Spend unconfirmed funds";
+"currencyConversion" = "Currency conversion";
+"connectIpDesc" = "Connect to specific peer";
+"userAgent" = "User agent";
+"userAgentInfo" = "For exchange rate fetching";
+"setupUserAgent" = "Set up user agent";
+"syncOnWifiDesc" = "Sync when not on WiFi";
+"buildDate" = "Build Date";
+"walletLog" = "Wallet Log";
+"none" = "None";
+"rescanConfirm" = "Are you sure? This could take some time.";
+"rescanBlockchain" = "Rescan blockchain";
+"general" = "General";
+"connection" = "Connection";
+"about" = "About";
+"debug" = "Debug";
+"notifications" = "Notifications";
+"checkWalletLog" = "Check wallet log";
+"helpInfo" = "For more information, please visit the Decred documentation.";
+"seeDocumentations" = "See Documentations";
+"beepForNewBlocks" = "Beep for new blocks";
+"enablePoliteiaNotification" = "Enable politeia notifications";
+"checkStatistics" = "Check statistics";
+"statistics" = "Statistics";
+"seconds" = "%d Seconds";
+"minutes" = "%d Minutes";
+"hours" = "%d Hours";
+"weeks" = "%d Weeks";
+"months" = "%d Months";
+"years" = "%d Years";
+"net" = "Net";
+"connectPeer" = "Connected peers";
+"colorTheme" = "Color theme";
+"light" = "Light";
+"dark" = "Dark";
+"deviceDefault" = "Device default";
+
+/* Change startup/spending pin/pass */
+"newPasswordPlaceholder" = "New %@ password";
+"newPINPlaceholder" = "Enter new %@ PIN";
+"confirmNewPasswordPlaceholder" = "Confirm new %@ password";
+"confirmNewPINPlaceholder" = "Enter new %@ PIN again";
+"change" = "Change";
+
+/* IP set */
+"connectToPeer" = "Connect to peer";
+"peerAddressIsInvalid" = "Peer address is invalid";
+
+/* License */
+"license" = "License";
+
+/* Wallet Log */
+"copy" = "Copy";
+"walletLogCopied" = "Wallet log copied.";
+
+/* Transaction Notification */
+"walletNewTransaction" = "[%@] New Transaction";
+"newTransaction" = "New Transaction";
+"youReceived" = "You received %@ DCR";
+"walletTicketVoted" = "[%@] A ticket just voted";
+"ticketVoted" = "A ticket just voted";
+"walletTicketRevoked" = "[%@] A ticket was revoked";
+"ticketRevoked" = "A ticket was revoked";
+"voteReward" = "Vote Reward: %d DCR";
+
+/* View controller sender */
+"spending" = "Spending";
+"startup" = "Startup";
+"current" = "Current";
+
+/* Dcrlibwallet extension */
+"lessThanOneday" = "<1 day";
+"oneDay" = "1 day";
+"mutlipleDays" = "%d days";
+"minRemaining" = "%d min";
+"secRemaining" = "%d sec";
+
+/* Pop Ups */
+"clear" = "Clear";
+"error" = "Error";
+"retry" = "Retry";
+"ok" = "OK";
+"confirm" = "Confirm";
+"remove" = "Remove";
+"cancel" = "Cancel";
+"back" = "Back";
+"clearFields" =  "Clear fields";
+"copiedSuccessfully" = "Copied successfully.";
+"addrCopied" = "Address copied!";
+"previousOutpointCopied" = "Previous outpoint copied!";
+"delete" = "Delete";
+"allowOnce" = "Allow once";
+"alwaysAllow" = "Always allow";
+"notNow" = "Not now";
+
+/* Other Text */
+"send" = "send";
+"receive" = "receive";
+"settings" = "Settings";
+"help" = "Help";
+"gotIt" = "Got it";
+"security" = "Security";
+
+/* Seed Backup Reminder */
+"keepInMind" = "Keep in mind";
+"viewSeedPhrase" = "View seed phrase";
+"reminderLabel1" = "The <bold>33-word seed phrase</bold> is EXTREMELY IMPORTANT.";
+"reminderLabel2" = "Seed phrase is <bold>the only way</bold> to restore your wallet.";
+"reminderLabel3" = "It is recommended to store your seed phrase in a <green>physical format</green> (e.g. write down on a paper).";
+"reminderLabel4" = "It is highly discouraged to store your seed phrase in any <orange>digital format</orange> (e.g. screenshot).";
+"reminderLabel5" = "Anyone with your seed phrase <orange>can steal your funds</orange>. DO NOT show it to anyone.";
+
+/* Seed Words Display */
+"writeDownSeedPhrase" = "Write down seed phrase";
+"writeDownStep1_2" = "Step 1/2";
+"writeDownStep2_2" = "Step 2/2";
+
+/* Seed Backup Verify */
+"writeDownAll33Words" = "Write down all 33 words in the correct order.";
+"your33word" = "Your 33-word seed phrase";
+"iHaveWroteDown" = "I have written down all 33 words";
+"verify" = "Verify";
+"backupSuccessTitle" = "Your seed phrase backup is verified";
+"backupSuccessDesc" = "Be sure to store your seed phrase backup in a secure location.";
+"backToWallets" = "Back to Wallets";
+"failedToVerify" = "Failed to verify. Please go through every words and try again.";
+"verifying" = "Verifying...";
+"verifySeedPhrase" = "Verify seed phrase";
+"selectTheCorrectWordsToVerify" = "Select the correct words to verify.";
+"enterSeedOnNextScreen" = "You will be asked to enter the seed phrase on the next screen.";
+
+/* Statistics */
+"build" = "Build";
+"peersConnected" = "Peers connected";
+"uptime" = "Uptime";
+"network" = "Network";
+"bestBlock" = "Best block";
+"bestBlockTimestamp" = "Best block timestamp";
+"bestBlockAge" = "Best block age";
+"walletFile" = "Wallet data directory";
+"chainData" = "Wallet data";
+"accounts" = "Accounts";
+
+/* Privacy */
+"privacy" = "Privacy";
+"setupMixerWithTwoAccounts" = "Set up mixer by creating two needed accounts";
+"setupMixer" = "Set up mixer";
+"beginSetup" = "Begin setup";
+"setupMixerInfo" = "Two dedicated accounts (“mixed” & “unmixed”) will be created in order to use the mixer.";
+"confirmToCreateMixer" = "Confirm to create needed accounts";
+"keepThisAppOpened" = "Keep this app opened";
+"overviewMixerInfo" = "Mixer will automatically stop when unmixed balance are fully mixed.";
+"mixedBalance" = "Mixed balance";
+"noUnmixedBalance" = "No unmixed balance";
+"mixer" = "Mixer";
+"privacyIsHere" = "Privacy is here";
+"privacyIsHereInfo" = "You can now use StakeShuffle mixer to mix your DCRs, right in the app.";
+"unmixedBalance" = "Unmixed balance";
+"mixerSettings" = "Mixer Settings";
+"unmixedAccount" = "Unmixed account";
+"mixedAccountBranch" = "Mixed account branch";
+"mixSever" = "Mix server";
+"serverPort" = "Server port";
+"allowUnmixedSpending" = "Allow spending from unmixed accounts";
+"allBalanceMixed" = "All balance mixed";
+"howCoinShuffleEnhancePrivacy" = "How does StakeShuffle mixer enhance your privacy?";
+"coinShuffleInfo" = "StakeShuffle mixer can mix your DCRs through CoinJoin transactions.";
+"mixedDCRInfo" = "Using mixed DCRs protects you from exposing your financial activities to the public (e.g. how much you own, who pays you).";
+"setUpMixerForWallet" = "Set up mixer for this wallet";
+"howToUseMixer" = "How to use the mixer?";
+"howToUseMixerInfo" = "When you turn on the mixer, your unmixed DCRs in this wallet (unmixed balance) will be gradually mixed.";
+"importantKeepThisAppRunning" = "Important: keep this app opened while mixer is running.";
+"importantKeepThisAppRunningInfo" = "Mixer will automatically stop when unmixed balance are fully mixed.";
+"setupPrivacyHere" = "Set up privacy here";
+"checkMixerStatus" = "Check mixer status";
+"mixing" = "Mixing...";
+"setupPrivacyInfo1" = "<black>Mixed</black> account will be the outbound spending account.";
+"dismiss" = "Dismiss";
+"accountNameTaken" = "Account name is taken";
+"accountNameTakenMsg" = "There are existing account named mixed and unmixed. Please change the name to something else for now. You can change them after the setup.";
+"goBackAndRename" = "Go back & rename";
+"manualSetupWarning" = "<bold>Make sure to select the corresponding accounts to the previous setup</bold>. Failing to do so could damage wallet privacy.";
+"mixedAccount" = "Mixed account";
+"unMixedAccount" = "Unmixed account";
+"sameAcountCannotBeUsedForMixedAndUnmixed" = "Cannot use same account for mixed and unmixed";
+"mixerSetupCompleted" = "Mixer setup completed";
+"setUp" = "Set up";
+"manualSetup" = "Manual setup";
+"readyToMix" = "Ready to mix";
+"noMixableOutput" = "Unmixed account has no mixable output";
+"mixerHasStoppedRunning" = "Mixer has stopped running";
+"mixerIsRuning" = "Mixer is running";
+"mixersAreRuning" = "Mixers are runing";
+"mixerHelperTitle" = "How to use the mixer?";
+"mixerHelperDsc" = "<span style=\"font-family: 'SourceSansPro-Regular'; font-size: 16px; color: #3D5873\">When you turn on the mixer, your unmixed DCRs in this wallet (unmixed balance) will be gradually mixed.<br/><br/><b><font color=\"#091440\">Important: keep this app opened while mixer is running.</font></b><br/><br/>Mixer will automatically stop when unmixed balance are fully mixed.</span>";
+"startMixerWarning" = "Your wallet will be unlocked until mixing completes.";
+"continueText" = "Continue";
+"unlockToStartMixing" = "Unlock your wallet to start mixing";
+"mixed" = "Mixed";
+"mix" = "Mix";
+"newLabel" = "NEW";
+"mixTxChangeSummaryEnabled" = "Change on transactions from all accounts will go to unmixed";
+"mixTxChangeSummaryDisabled" = "Change on transactions from mixed will go to unmixed";
+"mixTxChange" = "Mix change";
+"changeSummary" = "<span style=\"font-family: 'SourceSansPro-Regular'; font-size: 14px; color: #596D81\">Change of <b>%@ DCR</b> will return to \'<b>%@</b>\'";
