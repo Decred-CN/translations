@@ -49,7 +49,7 @@
     <string name="syncing_ellipsis">同步中…</string>
     <string name="connected_to_a_peer">连接到指定节点</string>
     <string name="connected_to_n_peer">已连接到%1$d 个节点</string>
-    <string name="ok">OK</string>
+    <string name="ok">确认</string>
     <string name="_continue">继续</string>
     <string name="user_agent">用户代理标识</string>
     <string name="user_agent_dialog_title">代理标识</string>
