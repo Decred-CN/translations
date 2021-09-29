@@ -634,7 +634,7 @@
     <string name="status">状态</string>
     <string name="reward">奖励</string>
     <string name="days_to_vote">投票花费天数</string>
-    <string name="spendable_in">距离投票时间</string>
+    <string name="spendable_in">解锁进度</string>
     <string name="view_associated_ticket">查看关联选票</string>
     <string name="missed_expired">错过/过期</string>
     <string name="age">持票时长</string>
